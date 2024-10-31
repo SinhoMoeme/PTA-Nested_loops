@@ -81,3 +81,9 @@ We can optimize this code since for each item, if it have a predecessor, the val
 Just save the former value and add it by $i$ will save a lot of time.
 
 我們可以優化這段程式碼，因為對於每個項目，如果它有前任者，它的值等於前任者的值加上 $i$ 。所以從頭計算每個項目的值是一種浪費。只需保存先前的值，每次加 $i$ ，便能節省很多時間。
+``` C++
+for(int i=1;i<=n;++i){
+    now+=i;
+    s+=now;
+}
+```
